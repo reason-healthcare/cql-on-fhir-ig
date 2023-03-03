@@ -18,6 +18,8 @@ jobs:
       with:
         node-version: 18
     - uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
     - run: gem install -N jekyll
     - run: npm install -g fsh-sushi
     - run: ./_updatePublisher.sh -y
