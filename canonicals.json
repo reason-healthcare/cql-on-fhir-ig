@@ -1,0 +1,23 @@
+[
+  {
+    "id" : "fhir.example",
+    "type" : "ImplementationGuide",
+    "url" : "http://example.org/ImplementationGuide/fhir.example",
+    "version" : "0.1.0",
+    "name" : "SqlOnFhir"
+  },
+  {
+    "id" : "SqlCondition",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/SqlCondition",
+    "version" : "0.1.0",
+    "name" : "SqlCondition"
+  },
+  {
+    "id" : "SqlReference",
+    "type" : "StructureDefinition",
+    "url" : "http://example.org/StructureDefinition/SqlReference",
+    "version" : "0.1.0",
+    "name" : "SqlReference"
+  }
+]

@@ -1,0 +1,25 @@
+﻿SqlOnFhir : Validation Results
+=========================================
+
+err = 4, warn = 6, info = 0
+IG Publisher Version: 1.2.39
+Generated Fri Mar 03 14:59:37 UTC 2023. FHIR version 4.0.1 for fhir.example#0.1.0 (canonical = http://example.org)
+ Build Errors : 0 / 6 / 0
+ /home/runner/work/cql-on-fhir-ig/cql-on-fhir-ig/fsh-generated/resources/ImplementationGuide-fhir.example : 0 / 0 / 1
+ /home/runner/work/cql-on-fhir-ig/cql-on-fhir-ig/fsh-generated/resources/StructureDefinition-SqlCondition : 3 / 0 / 1
+ /home/runner/work/cql-on-fhir-ig/cql-on-fhir-ig/fsh-generated/resources/StructureDefinition-SqlReference : 1 / 0 / 1
+</table>
+== n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SqlCondition.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource StructureDefinition/SqlReference.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: 1: The HTML fragment 'ip-statements.xhtml' is not included anywhere in the produced implementation guide
+WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-version-analysis-inline.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
+WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
+== fsh-generated/resources/ImplementationGuide-fhir.example.json ==
+== fsh-generated/resources/StructureDefinition-SqlCondition.json ==
+ERROR: StructureDefinition/SqlCondition: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
+ERROR: StructureDefinition/SqlCondition: StructureDefinition.differential.element[3].type[0].targetProfile[0]: Profile http://example.org/StructureDefinition/SqlReference is for type StructureDefinition[http://example.org/StructureDefinition/SqlReference|0.1.0], which is not a Resource (which is required because the SqlCondition.references element has type Reference)
+ERROR: StructureDefinition/SqlCondition: StructureDefinition.snapshot.element[3].type[0].targetProfile[0]: Profile http://example.org/StructureDefinition/SqlReference is for type StructureDefinition[http://example.org/StructureDefinition/SqlReference|0.1.0], which is not a Resource (which is required because the SqlCondition.references element has type Reference)
+== fsh-generated/resources/StructureDefinition-SqlReference.json ==
+ERROR: StructureDefinition/SqlReference: StructureDefinition.snapshot: Rule sdf-3: 'Each element definition in a snapshot must have a formal definition and cardinalities' Failed
